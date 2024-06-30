@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".home.ui.categories.CategoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/toolbarbackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/toolbarbackground" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <RelativeLayout
+       android:paddingTop="?actionBarSize"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.appcompat.widget.SearchView
+           android:layout_width="match_parent"
+           android:layout_height="?actionBarSize"
+           app:queryHint="Search Porducts"
+           app:queryBackground="?attr/toolbarbackground"
+           android:id="@+id/search_view"
+           app:searchIcon="@drawable/ic_baseline_search_24"
+           android:layout_margin="5dp"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/recycler_view"
+           android:elevation="10dp"
+           android:layout_below="@id/search_view"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="70dp"/>
+
+
+
+   </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

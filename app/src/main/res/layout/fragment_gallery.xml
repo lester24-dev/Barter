@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    android:background="?attr/backgroundcolor"
+    tools:context=".home.ui.gallery.GalleryFragment">
+
+  <RelativeLayout
+      android:paddingTop="?actionBarSize"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Add Product"
+          android:textAlignment="center"
+          android:textSize="30sp"
+          android:textColor="?attr/textcolor"/>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_name"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="5dp"
+              android:hint="Product Name"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="?attr/boxTextColor"
+                />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/productCat"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:layout_marginRight="10dp"
+              android:hint="Categories"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <AutoCompleteTextView
+                android:id="@+id/productCats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="?attr/boxTextColor"/>
+
+          </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_price"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:hint="Product Price"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="?attr/boxTextColor"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/productColor"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Color Type"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <AutoCompleteTextView
+                android:id="@+id/productColors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="?attr/boxTextColor"/>
+
+          </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="85dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_size"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:hint="Product Size"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="?attr/boxTextColor"
+                />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_year"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Product year"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="?attr/boxTextColor"
+                />
+          </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="85dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_des"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Product Des"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="?attr/boxTextColor"
+                />
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="85dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/product_brand"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Product Brand"
+              app:hintTextColor="?attr/boxTextColor"
+              app:boxStrokeColor="?attr/boxTextColor"
+              app:boxBackgroundColor="?attr/textcolor1"
+              >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="?attr/boxTextColor"
+                />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:layout_width="180dp"
+              android:layout_height="70dp"
+              android:scaleType="centerCrop"
+              android:layout_marginLeft="5dp"
+              android:id="@+id/image_preview"
+              android:layout_marginBottom="10dp"
+              android:layout_marginRight="10dp"
+              android:background="?attr/btnText"/>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="85dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          app:cardBackgroundColor="?attr/cardbackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+          <Button
+              android:layout_width="180dp"
+              android:layout_height="60dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:text="Choose Image"
+              android:id="@+id/btn_choose_image"
+              android:backgroundTint="?attr/btnText"/>
+
+
+          <Button
+              android:layout_width="160dp"
+              android:layout_height="60dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:text="Add Product"
+              android:id="@+id/add_product"
+              android:backgroundTint="?attr/btnText"/>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+  </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

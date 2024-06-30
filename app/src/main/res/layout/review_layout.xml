@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reviewCard"
+    app:cardBackgroundColor="?attr/cardbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:weightSum="10"
+        android:layout_marginTop="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/profilePic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_toRightOf="@id/profilePic"
+            android:padding="5dp"
+            android:text="username"
+            android:id="@+id/name"
+            android:textColor="?attr/textcolor"/>
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@id/profilePic"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/rating"
+            android:progressTint="#FBE140"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:text="Reviews"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/review"
+            android:textColor="?attr/textcolor"
+            android:layout_toRightOf="@id/profilePic"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
