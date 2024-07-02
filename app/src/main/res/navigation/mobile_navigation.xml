@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.barter.home.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.barter.home.ui.gallery.GalleryFragment"
+        android:label="Add Product"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.example.barter.home.ui.users.UsersFragment"
+        android:label="My Product"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.barter.cart.CartFragment"
+        android:label="Add To Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.barter.home.ui.setting.SettingFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_setting"/>
+</navigation>
