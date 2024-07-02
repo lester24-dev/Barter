@@ -12,4 +12,16 @@ Modules:
 7. Chat Seller
 8. Add To Cart
 9. Using GPS to see Items nearby by your location
-10. 
+10. Notification
+11. Checkout
+12. SMS
+
+Platform:
+1. Android Studio
+2. Firebase
+
+Language:
+1. Java
+
+Database:
+1. Firebase
