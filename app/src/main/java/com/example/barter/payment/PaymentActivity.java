@@ -99,8 +99,8 @@ public class PaymentActivity extends AppCompatActivity {
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
             .clientId(Config.PAYMENT_CLIENT_ID);
 
-    public static final String ACCOUNT_SID = "ACCOUNT_SID";
-    public static final String AUTH_TOKEN = "AUTH_TOKEN";
+    // public static final String ACCOUNT_SID = "ACCOUNT_SID";
+    // public static final String AUTH_TOKEN = "AUTH_TOKEN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

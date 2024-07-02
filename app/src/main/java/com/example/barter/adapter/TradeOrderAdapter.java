@@ -70,8 +70,8 @@ public class TradeOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     private Activity mActivity;
     private FirebaseUser firebaseUser;
     String name;
-    public static final String ACCOUNT_SID = "ACCOUNT_SID";
-    public static final String AUTH_TOKEN = "AUTH_TOKEN";
+    // public static final String ACCOUNT_SID = "ACCOUNT_SID";
+    // public static final String AUTH_TOKEN = "AUTH_TOKEN";
     String Messagename, imageUri, message, SellerName, imageUri1, customerName, customerAddress;
     FirebaseFirestore firebaseFirestore;
     private FirebaseDatabase firebaseDatabase;

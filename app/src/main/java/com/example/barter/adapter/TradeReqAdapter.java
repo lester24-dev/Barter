@@ -65,10 +65,10 @@ public class TradeReqAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     DatabaseReference reference;
     FirebaseFirestore firebaseFirestore;
     private ProgressDialog progressDialog;
-    public static final String ACCOUNT_SID = "ACCOUNT_SID";
-    public static final String AUTH_TOKEN = "AUTH_TOKEN";
-    public static final String ACCOUNT_SID2 = "ACCOUNT_SID2";
-    public static final String AUTH_TOKEN2 = "AUTH_TOKEN2";
+    // public static final String ACCOUNT_SID = "ACCOUNT_SID";
+    // public static final String AUTH_TOKEN = "AUTH_TOKEN";
+    // public static final String ACCOUNT_SID2 = "ACCOUNT_SID2";
+    // public static final String AUTH_TOKEN2 = "AUTH_TOKEN2";
     String Messagename, imageUri, message, SellerName, imageUri1, customerName, customerAddress;
     private FirebaseDatabase firebaseDatabase;
 
